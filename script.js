@@ -23,4 +23,41 @@ var btn16 = $("#btn16");
 var btn17 = $("#btn17");
 // variable: current time
 var timeNow = parseInt(moment().format("HH"));
-console.log(timeNow);
+// console.log(timeNow);
+
+// ------------------------------------SAVING TO LOCAL STORAGE-----------------------------------
+btn9.click(function () {
+  localStorage.setItem("input9", div9.val());
+});
+
+btn10.click(function () {
+  localStorage.setItem("input10", div10.val());
+});
+
+btn11.click(function () {
+  localStorage.setItem("input11", div11.val());
+});
+
+btn12.click(function () {
+  localStorage.setItem("input12", div12.val());
+});
+
+btn13.click(function () {
+  localStorage.setItem("input13", div13.val());
+});
+
+btn14.click(function () {
+  localStorage.setItem("input14", div14.val());
+});
+
+btn15.click(function () {
+  localStorage.setItem("input15", div15.val());
+});
+
+btn16.click(function () {
+  localStorage.setItem("input16", div16.val());
+});
+
+btn17.click(function () {
+  localStorage.setItem("input17", div17.val());
+});
