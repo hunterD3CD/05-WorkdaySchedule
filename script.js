@@ -61,3 +61,16 @@ btn16.click(function () {
 btn17.click(function () {
   localStorage.setItem("input17", div17.val());
 });
+// ------------------------------------RETRIEVING FROM LOCAL STORAGE-----------------------------------
+div9.val(localStorage.getItem("input9"));
+div10.val(localStorage.getItem("input10"));
+div11.val(localStorage.getItem("input11"));
+div12.val(localStorage.getItem("input12"));
+div13.val(localStorage.getItem("input13"));
+div14.val(localStorage.getItem("input14"));
+div15.val(localStorage.getItem("input15"));
+div16.val(localStorage.getItem("input16"));
+div17.val(localStorage.getItem("input17"));
+
+// ------------------------------------CHECKING THE TIME----------------------------------
+function checkTime() {}
