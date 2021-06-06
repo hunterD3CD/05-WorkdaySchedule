@@ -61,7 +61,7 @@ btn16.click(function () {
 btn17.click(function () {
   localStorage.setItem("input17", div17.val());
 });
-// ------------------------------------RETRIEVING FROM LOCAL STORAGE-----------------------------------
+// ------------------------------------RETRIEVING FROM LOCAL STORAGE---------------------------------------------
 div9.val(localStorage.getItem("input9"));
 div10.val(localStorage.getItem("input10"));
 div11.val(localStorage.getItem("input11"));
@@ -72,5 +72,82 @@ div15.val(localStorage.getItem("input15"));
 div16.val(localStorage.getItem("input16"));
 div17.val(localStorage.getItem("input17"));
 
-// ------------------------------------CHECKING THE TIME----------------------------------
-function checkTime() {}
+// ------------------------------------CURRENT TIME--------------------------------------------------------------
+
+// ------------------------------------CHECKING THE TIME: past, present, future----------------------------------
+function checkTime() {
+  // 9
+  if (parseInt(div9.attr("data-hour")) > timeNow) {
+    div9.addClass("future");
+  } else if (parseInt(div9.attr("data-hour")) === timeNow) {
+    div9.addClass("present");
+  } else {
+    div9.addClass("past");
+  }
+  // 10
+  if (parseInt(div10.attr("data-hour")) > timeNow) {
+    div10.addClass("future");
+  } else if (parseInt(div10.attr("data-hour")) === timeNow) {
+    div10.addClass("present");
+  } else {
+    div10.addClass("past");
+  }
+  // 11
+  if (parseInt(div11.attr("data-hour")) > timeNow) {
+    div11.addClass("future");
+  } else if (parseInt(div11.attr("data-hour")) === timeNow) {
+    div11.addClass("present");
+  } else {
+    div11.addClass("past");
+  }
+  // 12
+  if (parseInt(div12.attr("data-hour")) > timeNow) {
+    div12.addClass("future");
+  } else if (parseInt(div12.attr("data-hour")) === timeNow) {
+    div12.addClass("present");
+  } else {
+    div12.addClass("past");
+  }
+  // 13
+  if (parseInt(div13.attr("data-hour")) > timeNow) {
+    div13.addClass("future");
+  } else if (parseInt(div13.attr("data-hour")) === timeNow) {
+    div13.addClass("present");
+  } else {
+    div13.addClass("past");
+  }
+  // 14
+  if (parseInt(div14.attr("data-hour")) > timeNow) {
+    div14.addClass("future");
+  } else if (parseInt(div14.attr("data-hour")) === timeNow) {
+    div14.addClass("present");
+  } else {
+    div14.addClass("past");
+  }
+  // 15
+  if (parseInt(div15.attr("data-hour")) > timeNow) {
+    div15.addClass("future");
+  } else if (parseInt(div15.attr("data-hour")) === timeNow) {
+    div15.addClass("present");
+  } else {
+    div15.addClass("past");
+  }
+  // 16
+  if (parseInt(div16.attr("data-hour")) > timeNow) {
+    div16.addClass("future");
+  } else if (parseInt(div16.attr("data-hour")) === timeNow) {
+    div16.addClass("present");
+  } else {
+    div16.addClass("past");
+  }
+  // 17
+  if (parseInt(div17.attr("data-hour")) > timeNow) {
+    div17.addClass("future");
+  } else if (parseInt(div17.attr("data-hour")) === timeNow) {
+    div17.addClass("present");
+  } else {
+    div17.addClass("past");
+  }
+}
+// run the function
+checkTime();
