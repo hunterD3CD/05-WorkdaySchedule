@@ -1,6 +1,7 @@
 // ------------------------------------ESTABLISHING VARIABLES-----------------------------------
 // variable: current day
 var dayE1 = $("#currentDay");
+var timeE1 = $("#currentTime");
 // variable: description for each time
 var div9 = $("#div9");
 var div10 = $("#div10");
@@ -72,7 +73,13 @@ div15.val(localStorage.getItem("input15"));
 div16.val(localStorage.getItem("input16"));
 div17.val(localStorage.getItem("input17"));
 
-// ------------------------------------CURRENT TIME--------------------------------------------------------------
+// ------------------------------------CURRENT TIME: run the time--------------------------------------------------------------
+function clock() {
+  dayE1.text(moment().format("dddd MMM Do YY"));
+  timeE1.text(moment().format("hh:mm:ss a"));
+}
+clock();
+setInterval(clock, 1000);
 
 // ------------------------------------CHECKING THE TIME: past, present, future----------------------------------
 function checkTime() {
