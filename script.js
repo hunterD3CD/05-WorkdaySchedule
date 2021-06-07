@@ -22,6 +22,7 @@ var btn14 = $("#btn14");
 var btn15 = $("#btn15");
 var btn16 = $("#btn16");
 var btn17 = $("#btn17");
+var btnClear = $("#btnClear");
 // variable: current time
 var timeNow = parseInt(moment().format("HH"));
 // console.log(timeNow);
@@ -72,6 +73,14 @@ div14.val(localStorage.getItem("input14"));
 div15.val(localStorage.getItem("input15"));
 div16.val(localStorage.getItem("input16"));
 div17.val(localStorage.getItem("input17"));
+
+// ------------------------------------CLEAR THE LOCAL STORAGE-------------------------------------------------
+function clear() {
+  localStorage.clear();
+}
+btnClear.click(function () {
+  clear();
+});
 
 // ------------------------------------CURRENT TIME: run the time--------------------------------------------------------------
 function clock() {
